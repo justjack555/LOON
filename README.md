@@ -12,25 +12,24 @@ described below - this is just a working outline!
 
 LOON has the following types:
 
-`
-int;
 
-double;
+`int;`
 
-char;
+`double;`
 
-string;
+`char;`
 
-bool;
+`string;`
 
-object; //Container holding several key-value pairs
+`bool;`
 
-list; //Array with flexible length`
+`object; //Container holding several key-value pairs`
 
-`
-pair; //Key-value pair where value can be any of the above types 
+`list; //Array with flexible length`
 
-JSON; //Wrapper type that consists of a collection of pairs concatenated
+`pair; //Key-value pair where value can be any of the above types `
+
+`JSON; //Wrapper type that consists of a collection of pairs concatenated
       //Note: This type may not be necessary but may prove convenient`
       
 Language characteristics:
@@ -52,9 +51,12 @@ Language characteristics:
          
          
 *Values of data fields can be accessed through dot notation - just like regular JSON!
-    i.e.: `//from the above
+    i.e.:
+     
+     `   //from the above
          string jacksName = firstJSON.name;
-         //jacksName == "Just Jack"`                      
+         //jacksName == "Just Jack"`    
+                           
 *We can implement a standard library of whatever size we like - however, I think the 
 types themselves should be able to handle most operations that developers want to perform
 on them
