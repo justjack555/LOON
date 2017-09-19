@@ -32,11 +32,16 @@ LOON has the following types:
 `JSON; //Wrapper type that consists of a collection of pairs concatenated
       //Note: This type may not be necessary but may prove convenient`
       
+      
 Language characteristics:
+
 *Strongly typed
+
 *Should have input/output capabilities that it can:
+
     1.) Read in any type of file - this gives developers flexibility with what they want
     to mold into JSON
+    
     2.) Writes JSON
         -- We could let it write different types (i.e. You just want to write one string value), up for discussion 
 
