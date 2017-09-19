@@ -10,7 +10,7 @@ One thing to note: we can ALWAYS add things on top/remove some elements of what 
 described below - this is just a working outline!
 
 
-LOON has the following types:
+LOON has the following **types**:
 
 
 `int;`
@@ -33,7 +33,7 @@ LOON has the following types:
       //Note: This type may not be necessary but may prove convenient`
       
       
-Language characteristics:
+**Language characteristics:**
 
 *Strongly typed
 
@@ -67,7 +67,8 @@ types themselves should be able to handle most operations that developers want t
 on them
 
 
-Discussion Points:
+**Discussion Points:**
+
 *We can also add many more operations to the JSON type than just the concatenation operation
 
 *We may want to implement pointers into this language or we may not
@@ -81,12 +82,12 @@ Discussion Points:
 *Many more!
 
 
-Three Address Code:
+**Three Address Code:**
 *I can add some tomorrow, but this language is very simple to C or Java so it should
 end up looking similar to the C function that we saw broken down into Three Address 
 code as part of the second set of lecture notes  
 
-Sample program - very simple, like the above code:
+**Sample program** - very simple, like the above code:
     
     int main(){
         JSON firstJSON = {"name": "Just Jack"}
