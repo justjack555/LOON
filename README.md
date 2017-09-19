@@ -11,7 +11,7 @@ described below - this is just a working outline!
 
 
 LOON has the following types:
-`
+`\n
 int;
 double;
 char;
@@ -21,7 +21,7 @@ object; //Container holding several key-value pairs
 list; //Array with flexible length`
 
 `
-pair; //Key-value pair where value can be any of the above types
+pair; //Key-value pair where value can be any of the above types \n
 JSON; //Wrapper type that consists of a collection of pairs concatenated
       //Note: This type may not be necessary but may prove convenient`
       
