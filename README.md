@@ -11,17 +11,19 @@ described below - this is just a working outline!
 
 
 LOON has the following types:
+`
 int;
 double;
 char;
 string;
 bool;
 object; //Container holding several key-value pairs
-list; //Array with flexible length
+list; //Array with flexible length`
 
+`
 pair; //Key-value pair where value can be any of the above types
 JSON; //Wrapper type that consists of a collection of pairs concatenated
-      //Note: This type may not be necessary but may prove convenient
+      //Note: This type may not be necessary but may prove convenient`
       
 Language characteristics:
 *Strongly typed
@@ -31,14 +33,15 @@ Language characteristics:
     2.) Writes JSON
         -- We could let it write different types (i.e. You just want to write one string value), up for discussion 
 *Concatenating a variable of type JSON with a variable of type pair will yield type JSON
-    i.e: JSON firstJSON = {"name": "Just Jack"}
+    i.e: 
+        `JSON firstJSON = {"name": "Just Jack"}
          pair agePair = <"age", 20>;
          JSON secondJSON = firstJSON + agePair;
-         //secondJSON == {"name": "Just Jack", "age": 20}
+         //secondJSON == {"name": "Just Jack", "age": 20}`
 *Values of data fields can be accessed through dot notation - just like regular JSON!
-    i.e.: //from the above
+    i.e.: `//from the above
          string jacksName = firstJSON.name;
-         //jacksName == "Just Jack"                      
+         //jacksName == "Just Jack"`                      
 *We can implement a standard library of whatever size we like - however, I think the 
 types themselves should be able to handle most operations that developers want to perform
 on them
