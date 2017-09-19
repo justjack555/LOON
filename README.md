@@ -57,13 +57,15 @@ end up looking similar to the C function that we saw broken down into Three Addr
 code as part of the second set of lecture notes  
 
 Sample program - very simple, like the above code:
-int main(){
-    JSON firstJSON = {"name": "Just Jack"}
-    pair agePair = <"age", 20>;
-    JSON secondJSON = firstJSON + agePair;
-    //secondJSON == {"name": "Just Jack", "age": 20}
     
-    //Outputs JSON to screen
-    printJSON(secondJSON);
-    return 0;
-}       
+    int main(){
+        JSON firstJSON = {"name": "Just Jack"}
+        pair agePair = <"age", 20>;
+        JSON secondJSON = firstJSON + agePair;
+        //secondJSON == {"name": "Just Jack", "age": 20}
+        
+        //Outputs JSON to screen
+        printJSON(secondJSON);
+        return 0;
+    }
+   
