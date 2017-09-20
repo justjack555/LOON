@@ -22,7 +22,9 @@ of Maps and ArrayLists
 4.) Use the imported library to map the Java object back to valid JSON data
 
 LOON will eliminate the JSON-to-Native Object-to-JSON conversion process by allowing developers
-to always be operating on valid JSON at all points in the programming cycle.
+to always be operating on valid JSON at all points in the programming cycle. This can be of great 
+benefits to developers, who will be able to log their output at any given point of their code and
+see if the JSON is being formatted properly.
 
 One thing to note: we can ALWAYS add things on top/remove some elements of what I've 
 described below - this is just a working outline!
