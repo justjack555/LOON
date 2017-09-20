@@ -6,6 +6,24 @@ can be seen as the ultimate tool for developers to take large data sets and craf
 into JSON without the need for standard libraries and clunky string conversions. The 
 language will be the ultimate power tool for fast, simple modification of data sets.
 
+Consider LOON to be the ideal hybrid between programming with JavaScript objects and maintaining
+JSON format. The programmer can manipulate the JSON data as he or she likes, without ever needing to 
+break its JSON format. 
+
+**For example**, a Java program might take the following steps to work with JSON data:
+
+1.) Read in the JSON as a string
+
+2.) Import a library to recognize the string's JSON encoding and Map it to a defined Java object/a combination
+of Maps and ArrayLists
+
+3.) Manipulate the objects using native operations that can be performed on Java objects
+
+4.) Use the imported library to map the Java object back to valid JSON data
+
+LOON will eliminate the JSON-to-Native Object-to-JSON conversion process by allowing developers
+to always be operating on valid JSON at all points in the programming cycle.
+
 One thing to note: we can ALWAYS add things on top/remove some elements of what I've 
 described below - this is just a working outline!
 
@@ -27,7 +45,7 @@ LOON has the following **types**:
 
 `list; //Array with flexible length`
 
-`pair; //Key-value pair where value can be any of the above types `
+`pair; /*Key-value pair where value can be any of the above types. The key in a pair is always a string, LOON will handle the type conversion if it is not */`
 
 `JSON; //Wrapper type that consists of a collection of pairs concatenated
       //Note: This type may not be necessary but may prove convenient`
@@ -50,7 +68,14 @@ LOON has the following **types**:
     i.e: 
     
         `JSON firstJSON = {"name": "Just Jack"}
+        
+        //pairs can either be declared...
+        pair lName = <string, string>;
+        
+        //or defined and initialized
          pair agePair = <"age", 20>;
+         
+         //Concatenation
          JSON secondJSON = firstJSON + agePair;
          //secondJSON == {"name": "Just Jack", "age": 20}`
          
